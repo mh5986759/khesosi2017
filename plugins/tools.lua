@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 157059515 -- put Your ID here! <===
+local SUDO = 342293523 -- put Your ID here! <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
@@ -1099,11 +1099,11 @@ end
   if is_sudo(msg) then
 	if (matches[1]:lower() == "sendfile" or matches[1] == 'ارسال فایل') and matches[2] and matches[3] then
 		local send_file = "./"..matches[2].."/"..matches[3]
-		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 1, nil, send_file, '@BeyondTeam', dl_cb, nil)
+		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 1, nil, send_file, '@RobotZedSpamTeam', dl_cb, nil)
 	end
 	if matches[1]:lower() == "sendplug" or matches[1] == 'ارسال پلاگین' and matches[2] then
 	    local plug = "./plugins/"..matches[2]..".lua"
-		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 1, nil, plug, '@BeyondTeam', dl_cb, nil)
+		tdcli.sendDocument(msg.chat_id_, msg.id_,0, 1, nil, plug, '@RobotZedSpamTeam', dl_cb, nil)
     end
   end
 
@@ -1197,7 +1197,7 @@ if (matches[1] == "helptools" or  matches[1] == "راهنما ابزار") and i
 if not lang then
 text = [[
 
-_Sudoer And Admins Beyond Bot Help :_
+_Sudoer And Admins King Bot Help :_
 
 *!visudo* `[username|id|reply]`
 _Add Sudo_
@@ -1309,7 +1309,7 @@ tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
 text = [[
-_راهنمای ادمین و سودو های ربات بیوند:_
+_Help Sudo King_:
 
 *سودو* `[username|id|reply]`
 _اضافه کردن سودو_
